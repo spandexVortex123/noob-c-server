@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <script>
+            function login() {
+                let username = document.getElementsByName("username")[0].value;
+                let password = document.getElementsByName("password")[0].value;
+
+                // alert("username: " + username + " password: " + password);
+                console.log("username: " + username + " password: " + password);
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <form action="post-data" method="POST">
+            <label for="username">Username</label>
+            <input type="text" name="username" /><br>
+            <label for="password">Password</label>
+            <input type="password" name="password" /><br>
+            <button onclick="login()">Login</button>
+        </form>
+    </body>
+</html>
